@@ -1,0 +1,8 @@
+const requireControler = require('../controller/requireControler');
+
+const router = require('express').Router();
+
+router.get('/matches', requireControler.simulator);
+
+module.exports = router;
+
