@@ -5,10 +5,10 @@ module.exports = {
         const reponse = { status: false, data: [], error: [] };
 
         try {           
-            reponse.data = returnMatches();
-            reponse.status = true;
-            console.log('return consult');
-            return res.json(reponse);
+           // reponse.data = returnMatches();
+           // reponse.status = true;
+           // console.log('return consult');
+            return res.json(returnMatches());
         } catch (error) {
             reponse.data = [{error: `Error ao acessar a API ${error}`}];
             return res.json(reponse);
